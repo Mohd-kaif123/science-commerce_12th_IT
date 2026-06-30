@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Advanced Input Elements Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+        form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 500px; }
+        div { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input:not([type="image"]) { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="color"] { height: 40px; padding: 2px; }
+    </style>
+</head>
+<body>
+
+    <h2>HTML5 Advanced Inputs Form</h2>
+    
+    <form action="#" method="POST">
+
+        <div>
+            <label for="favcolor">Select Color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+        </div>
+
+        <div>
+            <label for="quantity">Enter Number (Quantity):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+        </div>
+
+        <div>
+            <label for="homepage">Enter URL:</label>
+            <input type="url" id="homepage" name="homepage" placeholder="https://example.com">
+        </div>
+
+        <div>
+            <label for="birthday">Select Date:</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+
+        <div>
+            <label for="email">Enter Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com">
+        </div>
+
+        <div>
+            <label for="bdaymonth">Select Month and Year:</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+        </div>
+
+        <div>
+            <label for="points">Select Range (Points):</label>
+            <input type="range" id="points" name="points" min="0" max="100">
+        </div>
+
+        <div>
+            <label for="meeting-time">Select Date and Time:</label>
+            <input type="datetime-local" id="meeting-time" name="meeting-time">
+        </div>
+
+        <div>
+            <label for="appt">Select Time:</label>
+            <input type="time" id="appt" name="appt">
+        </div>
+
+        <div>
+            <label for="week">Select Week and Year:</label>
+            <input type="week" id="week" name="week">
+        </div>
+
+        <div>
+            <label for="gsearch">Google Search String:</label>
+            <input type="search" id="gsearch" name="gsearch" placeholder="Type here to search...">
+        </div>
+
+        <div>
+            <label for="myfile">Select a File to Upload:</label>
+            <input type="file" id="myfile" name="myfile">
+        </div>
+
+        <div>
+            <label for="phone">Enter Telephone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+        </div>
+
+        <div>
+            <label>Submit Form using Image Button:</label>
+            <input type="image" src="https://via.placeholder.com/100x40?text=Submit" alt="Submit Button">
+        </div>
+
+    </form>
+
+</body>
+</html>

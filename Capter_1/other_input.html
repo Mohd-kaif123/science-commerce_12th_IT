@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- HTML5 document declare karta hai -->
+
+<html>
+<!-- HTML document ki starting -->
+<head>
+    <!-- Browser tab me jo title dikhai deta hai -->
+    <title>Forms in HTML5</title>
+</head>
+
+<body>
+    <!-- Form tag user se input lene ke liye use hota hai -->
+    <form>
+        <!-- Text display karne ke liye -->
+        Name:
+
+        <!--
+        <input> = User se input lene ke liye
+
+        type="text"
+        => Normal text input field
+
+        autocomplete
+        => Browser pehle se save data suggest karega
+        -->
+        <input type="text" autocomplete>
+
+        <!-- Line break -->
+        <br><br>
+        Email:
+
+        <!--
+        type="email"
+        => Sirf valid email accept karega
+
+        name="email"
+        => Form submit hone par isi naam se value server ko jayegi
+        -->
+        <input type="email" name="email">
+
+        <br><br>
+        Date of Inception:
+        <!--
+        type="date"
+        => Date picker open hota hai
+
+        name="bday"
+        => Server par value ka naam
+        -->
+        <input type="date" name="bday">
+
+        <br><br>
+        Office Time:
+        <!--
+        type="time"
+        => Time picker show karega
+
+        name="usr_time"
+        => Server ko value isi naam se milegi
+        -->
+        <input type="time" name="usr_time">
+
+        <br><br>
+        Number of years completed (between 1 and 100):
+        <input type="number" min="1" max="100">
+        <br><br>
+        Office Phone Number:
+        <!--
+        type="tel"
+        => Phone number input
+
+        name="phone"
+        => Server par phone naam se value jayegi
+
+        pattern="[0-9]{2}-[0-9]{10}"
+        => Format hona chahiye
+
+           91-9876543210
+
+        [0-9]
+        => Koi bhi digit
+
+        {2}
+        => 2 digits
+        -
+        => Dash compulsory
+        {10}
+        => 10 digits compulsory
+        required
+        => Field ko fill karna mandatory hai
+        -->
+        <input
+            type="tel"
+            name="phone"
+            pattern="[0-9]{2}-[0-9]{10}"
+            required>
+
+        <br><br>
+        Add your Homepage:
+        <!--
+        type="url"
+        => Sirf valid URL accept karega
+
+        Example:
+        https://google.com
+        -->
+        <input type="url" name="homepage">
+
+        <br><br>
+        <!--
+        type="image"
+        => Image ko submit button bana deta hai
+
+        src
+        => Image ka path
+
+        alt
+        => Agar image load na ho to ye text dikhega
+        -->
+        <input
+            type="image"
+            src="submitbutton.png"
+            alt="Click here to submit">
+
+    </form>
+
+</body>
+
+</html>
